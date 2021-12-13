@@ -120,10 +120,16 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\EmployeeController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ManagerController.cs" />
+    <Compile Include="Controllers\SupervisorController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Employee.cs" />
+    <Compile Include="Models\Manager.cs" />
+    <Compile Include="Models\Supervisor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -162,10 +168,30 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Employee\ShowEmployeeName.cshtml" />
+    <Content Include="Views\Employee\ShowEmployee.cshtml" />
+    <Content Include="Views\Employee\ShowAllEmployeesNames.cshtml" />
+    <Content Include="Views\Employee\ShowAllEmployees.cshtml" />
+    <Content Include="Views\Supervisor\ShowSupervisorName.cshtml" />
+    <Content Include="Views\Supervisor\ShowSupervisor.cshtml" />
+    <Content Include="Views\Supervisor\ShowAllSupervisorsNames.cshtml" />
+    <Content Include="Views\Supervisor\ShowAllSupervisors.cshtml" />
+    <Content Include="Views\Manager\ShowManagerName.cshtml" />
+    <Content Include="Views\Manager\ShowManager.cshtml" />
+    <Content Include="Views\Manager\ShowAllManagersNames.cshtml" />
+    <Content Include="Views\Manager\ShowAllManagers.cshtml" />
+    <Content Include="Views\Employee\CreateEmployee.cshtml" />
+    <Content Include="Views\Supervisor\CreateSupervisor.cshtml" />
+    <Content Include="Views\Manager\CreateManager.cshtml" />
+    <Content Include="Views\Manager\CreateManagerModel.cshtml" />
+    <Content Include="Views\Employee\CreateEmployeeModel.cshtml" />
+    <Content Include="Views\Supervisor\CreateSupervisorModel.cshtml" />
+    <Content Include="Views\Employee\CreateEmployeesList.cshtml" />
+    <Content Include="Views\Supervisor\CreateSupervisorsList.cshtml" />
+    <Content Include="Views\Manager\CreateManagersList.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
